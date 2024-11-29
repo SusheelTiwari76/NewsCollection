@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Feed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-links">
+      <a href="#" id="homeLink" onclick="setActive(this); fetchNews()">Home</a>
+      <a href="#" id="deshLink" onclick="setActive(this); fetchNews('देश')">देश</a>
+      <a href="#" id="duniyaLink" onclick="setActive(this); fetchNews('दुनिया')">दुनिया</a>
+      <a href="#" id="mpLink" onclick="setActive(this); fetchNews('मध्यप्रदेश')">मध्यप्रदेश</a>
+    </div>
+  </nav>
+  
+
+  <!-- Main Content -->
+  <div class="container">
+    <div id="newsFeed">Loading news...</div>
+  </div>
+
+  <script src="display.js"></script>
+</body>
+</html>
+
